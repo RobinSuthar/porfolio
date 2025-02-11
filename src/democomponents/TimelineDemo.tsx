@@ -11,6 +11,11 @@ import todo1 from "../images/todo1.png";
 import todo2 from "../Images/todo2.png";
 import todo3 from "../Images/todo3.png";
 import todo4 from "../Images/todo4.png";
+import farm1 from "../Images/farm1.png";
+import farm2 from "../Images/farm2.png";
+import farm3 from "../Images/farm3.png";
+import farm4 from "../Images/farm4.png";
+
 import { Button } from "@/components/ui/button";
 export function TimelineDemo() {
   const data = [
@@ -125,7 +130,7 @@ export function TimelineDemo() {
             <div>
               <Button className="mt-3">
                 {" "}
-                <a href="https://highlannderaibot.netlify.app/">Explore</a>
+                <a href="https://www.mytodomanager.com/">Explore</a>
               </Button>
             </div>
           </p>
@@ -154,6 +159,61 @@ export function TimelineDemo() {
             />
             <img
               src={todo4}
+              alt="cards template"
+              width={500}
+              height={500}
+              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+            />
+          </div>
+        </div>
+      ),
+    },
+
+    {
+      title: "Ferra Ag ",
+      content: (
+        <div>
+          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
+            A modernized digital solution designed to help a Calgary-based
+            farming company streamline its data management process. The company
+            is currently reliant on Excel spreadsheets, which can be
+            inefficient, prone to errors, and difficult to visualize
+            effectively. The proposed application and website will replace this
+            outdated method with an intuitive and interactive platform that
+            simplifies data handling, enhances visualization, and improves
+            overall farm management.
+            <div>
+              <Button className="mt-3">
+                {" "}
+                <a href="https://github.com/Skylar4/Farm_Prototype">Explore</a>
+              </Button>
+            </div>
+          </p>
+
+          <div className="grid grid-cols-2 gap-4">
+            <img
+              src={farm1}
+              alt="hero template"
+              width={500}
+              height={500}
+              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+            />
+            <img
+              src={farm1}
+              alt="feature template"
+              width={500}
+              height={500}
+              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+            />
+            <img
+              src={farm3}
+              alt="bento template"
+              width={500}
+              height={500}
+              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+            />
+            <img
+              src={farm4}
               alt="cards template"
               width={500}
               height={500}
