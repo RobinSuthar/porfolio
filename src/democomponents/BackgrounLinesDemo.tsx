@@ -7,8 +7,9 @@ export function BackgroundLinesDemo() {
         My Tech, <br /> Stack.
       </h2>
       <p className="max-w-xl mx-auto text-sm md:text-lg text-neutral-700 dark:text-neutral-400 text-center">
-        Get the best advices from our experts, including expert artists,
-        painters, marathon enthusiasts and RDX, totally free.
+        Over the years, covering both frontend and backend development, along
+        with database management and cloud services. Here’s an expanded
+        breakdown
       </p>
     </BackgroundLines>
   );
