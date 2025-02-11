@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Homepage from "./pages/Homepage";
-import Certifications from "./pages/Certifications";
+import Certification from "./pages/Certification";
 import TeachStack from "./pages/TeachStack";
 import { ThemeProvider } from "@/components/theme-provider";
 import { NavigationMenuDemo } from "./democomponents/NavigationMenuDemo";
@@ -14,7 +14,7 @@ function App() {
 
         <Routes>
           <Route path="/" element={<Homepage />}></Route>
-          <Route path="/certifications" element={<Certifications />} />
+          <Route path="/certifications" element={<Certification />} />
           <Route path="/techstack" element={<TeachStack />} />
         </Routes>
       </BrowserRouter>

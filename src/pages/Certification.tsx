@@ -1,6 +1,6 @@
 import { SpotlightPreview } from "@/democomponents/SpotlightPreview";
 
-const Certifications = () => {
+const Certification = () => {
   return (
     <div>
       <SpotlightPreview />
@@ -8,4 +8,4 @@ const Certifications = () => {
   );
 };
 
-export default Certifications;
+export default Certification;
