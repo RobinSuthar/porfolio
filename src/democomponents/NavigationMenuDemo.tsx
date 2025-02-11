@@ -42,13 +42,7 @@ export function NavigationMenuDemo() {
             </NavigationMenuLink>
           </a>
         </NavigationMenuItem>
-        <NavigationMenuItem>
-          <a href="https://x.com/RobinSuthar">
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              Twitter
-            </NavigationMenuLink>
-          </a>
-        </NavigationMenuItem>
+
         <NavigationMenuItem>
           <ModeToggle />
         </NavigationMenuItem>

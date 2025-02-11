@@ -1,6 +1,6 @@
 "use client";
-import { useMotionValue } from "framer-motion";
-import React, { useState, useEffect } from "react";
+import { MotionValue, useMotionValue } from "framer-motion";
+import { useState, useEffect } from "react";
 import { useMotionTemplate, motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 
@@ -11,18 +11,19 @@ export const EvervaultCard = ({
   text?: string;
   className?: string;
 }) => {
-  let mouseX = useMotionValue(0);
-  let mouseY = useMotionValue(0);
+  const mouseX = useMotionValue(0);
+  const mouseY = useMotionValue(0);
 
   const [randomString, setRandomString] = useState("");
 
   useEffect(() => {
-    let str = generateRandomString(1500);
+    const str = generateRandomString(1500);
     setRandomString(str);
   }, []);
 
-  function onMouseMove({ currentTarget, clientX, clientY }: any) {
-    let { left, top } = currentTarget.getBoundingClientRect();
+  function onMouseMove(event: React.MouseEvent<HTMLDivElement>) {
+    const { currentTarget, clientX, clientY } = event;
+    const { left, top } = currentTarget.getBoundingClientRect();
     mouseX.set(clientX - left);
     mouseY.set(clientY - top);
 
@@ -57,13 +58,23 @@ export const EvervaultCard = ({
   );
 };
 
-export function CardPattern({ mouseX, mouseY, randomString }: any) {
-  let maskImage = useMotionTemplate`radial-gradient(250px at ${mouseX}px ${mouseY}px, white, transparent)`;
-  let style = { maskImage, WebkitMaskImage: maskImage };
+interface CardPatternProps {
+  mouseX: MotionValue<number>;
+  mouseY: MotionValue<number>;
+  randomString: string;
+}
+
+export function CardPattern({
+  mouseX,
+  mouseY,
+  randomString,
+}: CardPatternProps) {
+  const maskImage = useMotionTemplate`radial-gradient(250px at ${mouseX}px ${mouseY}px, white, transparent)`;
+  const style = { maskImage, WebkitMaskImage: maskImage };
 
   return (
     <div className="pointer-events-none">
-      <div className="absolute inset-0 rounded-2xl  [mask-image:linear-gradient(white,transparent)] group-hover/card:opacity-50"></div>
+      <div className="absolute inset-0 rounded-2xl [mask-image:linear-gradient(white,transparent)] group-hover/card:opacity-50"></div>
       <motion.div
         className="absolute inset-0 rounded-2xl bg-gradient-to-r from-green-500 to-blue-700 opacity-0  group-hover/card:opacity-100 backdrop-blur-xl transition duration-500"
         style={style}
@@ -90,6 +101,9 @@ export const generateRandomString = (length: number) => {
   return result;
 };
 
-export const Icon = ({ className, ...rest }: any) => {
-  return <div></div>;
+export const Icon = ({
+  className,
+  ...rest
+}: React.HTMLAttributes<HTMLDivElement>) => {
+  return <div className={className} {...rest}></div>;
 };

@@ -22,7 +22,7 @@ export function SpotlightPreview() {
           </p>
         </div>
       </div>
-      <div className="flex justify-evenly">
+      <div className="flex md:flex-row justify-center md:ml-0 ml-4 flex-col md:justify-evenly">
         <ThreeDCardDemo />
         <ThreeDCardDemo2 />
       </div>
