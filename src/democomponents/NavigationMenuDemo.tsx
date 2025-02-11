@@ -22,11 +22,11 @@ export function NavigationMenuDemo() {
           </a>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <a href="https://x.com/RobinSutharSd">
+          <Link to="/techstack">
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              Twitter
+              Techstack
             </NavigationMenuLink>
-          </a>
+          </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
           <Link to="/docs">

@@ -1,5 +1,11 @@
+import { BackgroundLinesDemo } from "@/democomponents/BackgrounLinesDemo";
+
 const TeachStack = () => {
-  return <div>TeachSsadasdtack</div>;
+  return (
+    <div>
+      <BackgroundLinesDemo />
+    </div>
+  );
 };
 
 export default TeachStack;
