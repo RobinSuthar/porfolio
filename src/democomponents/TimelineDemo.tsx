@@ -7,7 +7,7 @@ import h1 from "../Images/hbot1.png";
 import h2 from "../Images/hbot2.png";
 import h3 from "../Images/hbot3.png";
 import h4 from "../Images/hbot4.png";
-import todo1 from "../images/todo1.png";
+import todo1 from "../Images/todo1.png";
 import todo2 from "../Images/todo2.png";
 import todo3 from "../Images/todo3.png";
 import todo4 from "../Images/todo4.png";
