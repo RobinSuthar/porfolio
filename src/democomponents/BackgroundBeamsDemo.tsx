@@ -19,8 +19,8 @@ export function BackgroundBeamsDemo() {
           <p className="text-neutral-500 max-w-lg mx-auto my-2 text-sm text-center relative z-10">
             Welcome. I'm a software developer student at SAIT, passionate about
             building innovative and scalable solutions. This website showcases
-            my projects, tech stack, and certifications. Feel free to explore
-            and connect with me!
+            my projects, tech stack, and certifications. Use dark mode fore
+            better experience.
           </p>
         </div>
         <BackgroundBeams />
