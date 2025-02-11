@@ -15,11 +15,11 @@ export function NavigationMenuDemo() {
     <NavigationMenu className="">
       <NavigationMenuList>
         <NavigationMenuItem>
-          <a href="https://github.com/RobinSuthar">
+          <Link to="/">
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              GitHub
+              Homepage
             </NavigationMenuLink>
-          </a>
+          </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
           <Link to="/techstack">
@@ -29,11 +29,25 @@ export function NavigationMenuDemo() {
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link to="/docs">
+          <Link to="/certifications">
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              Documentation
+              Certifications
             </NavigationMenuLink>
           </Link>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
+          <a href="https://github.com/RobinSuthar">
+            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+              GitHub
+            </NavigationMenuLink>
+          </a>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
+          <a href="https://x.com/RobinSuthar">
+            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+              Twitter
+            </NavigationMenuLink>
+          </a>
         </NavigationMenuItem>
         <NavigationMenuItem>
           <ModeToggle />

@@ -1,5 +1,11 @@
+import { SpotlightPreview } from "@/democomponents/SpotlightPreview";
+
 const certifications = () => {
-  return <div>certifications</div>;
+  return (
+    <div>
+      <SpotlightPreview />
+    </div>
+  );
 };
 
 export default certifications;
